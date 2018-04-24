@@ -1,11 +1,14 @@
-@import './footer.scss';
-@import './header.scss';
-@import './sections.scss';
-@import './variables.scss';
+@import './footer';
+@import './header';
+@import './sections';
+@import './variables';
 @import 'bootstrap/scss/bootstrap.scss';
 
-html,body,#root,.home{
-  height:100%;
+html,
+body,
+#root,
+.home {
+  height: 100%;
   overflow-x: hidden;
 }
 
