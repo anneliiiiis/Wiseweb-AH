@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-export default class Header extends Component {
+export default class Content extends Component {
   render() {
     return(
-      <header>
+      <div className="page-content">
         { this.props.children }
-      </header>
+      </div>
     )
   }
 }
