@@ -1,15 +1,9 @@
-@import './footer';
-@import './header';
-@import './sections';
-@import './variables';
 @import 'bootstrap/scss/bootstrap.scss';
 
 html,
 body,
 #root,
-.home,
 .app {
   height: 100%;
-  overflow-x: hidden;
 }
 

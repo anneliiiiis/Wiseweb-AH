@@ -1,11 +1,18 @@
 import React, { Component } from "react";
+import jss from 'jss';
+import preset from 'jss-preset-default';
+import injectSheet from 'react-jss';
 
-export default class Header extends Component {
-  render() {
-    return(
-      <header>
-        { this.props.children }
-      </header>
-    )
+const styles = {
+  header: {
+    position: "absolute",
   }
 }
+
+export const Header = injectSheet(styles)(({ classes, children }) => (
+  <header className={classes.header}>
+    { children }
+  </header>
+))
+
+
