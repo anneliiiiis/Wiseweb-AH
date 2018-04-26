@@ -29,3 +29,14 @@ export class Slope extends Component {
     )
   }
 }
+
+export class ColumnPaddingY extends Component {
+  render() {
+    const columnClass= `col-${this.props.breakpoint}-${this.props.colNumber} py-${this.props.paddingNumber}`;
+    return(
+      <div className={columnClass}>
+        { this.props.children }
+      </div>
+    )
+  }
+}
