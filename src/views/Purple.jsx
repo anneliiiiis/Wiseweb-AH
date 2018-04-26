@@ -3,6 +3,7 @@ import { Container } from "../components/Wrapper";
 import jss from 'jss';
 import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
+import i18n from'../components/i18n';
 
 jss.setup(preset());
 
@@ -25,7 +26,7 @@ export default class Purple extends Component {
       <div>
         <Container>
           <StyledContentText>
-            This is purple squirrel test
+            {i18n.t('purpleSquirrelTest')}
           </StyledContentText>
         </Container>
       </div>

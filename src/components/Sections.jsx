@@ -8,6 +8,7 @@ import jss from 'jss';
 import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
 import BackImage from  "../images/lights.jpg";
+import i18n from'../components/i18n';
 
 jss.setup(preset());
 

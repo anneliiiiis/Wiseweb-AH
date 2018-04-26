@@ -3,8 +3,6 @@ import { Container } from "./Wrapper";
 import PhoneNumber from 'react-phone-number';
 import FontAwesome from 'react-fontawesome';
 import { Col, Row } from 'react-bootstrap';
-import jss from 'jss';
-import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
 
 const styles = {

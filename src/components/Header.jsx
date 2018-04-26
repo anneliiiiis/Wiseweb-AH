@@ -16,16 +16,17 @@ const styles = {
   }
 }
 
- const StyledHeader = injectSheet(styles)(({ classes, children }) => (
+const StyledHeader = injectSheet(styles)(({ classes, children }) => (
   <header className={classes.header}>
     { children }
   </header>
 ))
 
-export default class Purple extends Component {
+export class Header extends Component {
   render() {
     return (
       <StyledHeader>
+        {this.props.children}
         <Button>
           <Link to={this.props.link}>{this.props.linkName}</Link>
         </Button>
