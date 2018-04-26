@@ -1,5 +1,4 @@
 section {
-  display: flex;
   .infoSection {
     background-color: #fef4f4;
     font-size: 18px;
@@ -24,45 +23,4 @@ section {
   h3 {
     color: #ed2024;
   }
-
 }
-.frontSection {
-  background: url(../images/lights.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  .logo {
-    background: url(../images/wisemedia_logo.svg) no-repeat center center fixed;
-    height: 100%;
-    @media screen and (min-width: 769px) {
-      -webkit-transform-origin: 50% 90%;
-      -moz-transform-origin: 50% 90%;
-      transform-origin: 50% 90%;
-      -webkit-animation: wave 10s 0.1s infinite alternate cubic-bezier(0.3, 0.03, 0.515, 0.955);
-      -moz-animation: wave 10s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      animation: wave 10s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      background-size: 600px 175px;
-    }
-  }
-}
-
-@-ms-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,4%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,4%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,4%,0) rotateZ(0deg); }
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,4%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,4%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,4%,0) rotateZ(-360deg); } }
-@keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,4%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,4%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,4%,0) rotateZ(0deg); }
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,4%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,4%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,4%,0) rotateZ(-360deg); } }

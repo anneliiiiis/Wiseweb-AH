@@ -4,17 +4,6 @@ import Zoom from 'react-reveal/Zoom';
 import TabelImage from  "../images/table.png";
 import BannerImage from  "../images/banner_text_image.png";
 
-
-
-export class MainSection extends Component {
-  render() {
-    return(
-      <div className="frontSection">
-        { this.props.children }
-      </div>
-    )
-  }
-}
 export class InfoSection extends Component {
   render() {
     return(
