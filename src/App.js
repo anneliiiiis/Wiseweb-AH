@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from "./views/Home";
 import Purple from "./views/Purple";
+import Header from "./components/Header";
 import { Footer } from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -18,12 +19,18 @@ class App extends Component {
             <Route
               path="/" exact
                   render={() => (
-                    <Home/>
+                    <div>
+                      <Header link="/purple" linkName="Go to purple"></Header>
+                      <Home/>
+                    </div>
                   )} />
             <Route
               path="/purple"
                   render={() => (
-                    <Purple/>
+                    <div>
+                      <Header link="/" linkName="Go to home"></Header>
+                      <Purple/>
+                    </div>
                   )} />
 
           </Switch>
