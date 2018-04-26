@@ -9,3 +9,13 @@ export class PrimaryButton extends Component {
     )
   }
 }
+
+export class DefaultButton extends Component {
+  render() {
+    return(
+      <div className="btn btn-default">
+        { this.props.children }
+      </div>
+    )
+  }
+}

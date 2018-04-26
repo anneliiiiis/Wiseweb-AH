@@ -1,12 +1,19 @@
 import React, { Component } from "react";
-import { Logo } from "./Logo";
+import jss from 'jss';
+import preset from 'jss-preset-default';
+import injectSheet from 'react-jss';
 
-export default class Header extends Component {
-  render() {
-    return(
-      <header>
-        <Logo/>
-      </header>
-    )
+const styles = {
+  header: {
+    position: "fixed",
+    zIndex: "1"
   }
 }
+
+export const Header = injectSheet(styles)(({ classes, children }) => (
+  <header className={classes.header}>
+    { children }
+  </header>
+))
+
+
