@@ -10,15 +10,13 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 
 class App extends Component {
   render() {
     const copyright = `${(new Date().getFullYear())} Wisemedia`
     const { t, i18n } = this.props;
-    const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
-    }
     return (
       <Router>
         <div>
@@ -30,8 +28,6 @@ class App extends Component {
                   render={() => (
                     <div>
                       <Header link="/purple" linkName={i18n.t('button.purpleBtn')}>
-                        <button onClick={() => changeLanguage('est')}>EST</button>
-                        <button onClick={() => changeLanguage('en')}>EN</button>
                       </Header>
                       <Home/>
                     </div>
@@ -41,14 +37,13 @@ class App extends Component {
                   render={() => (
                     <div>
                       <Header link="/" linkName={i18n.t('button.homeBtn')}>
-                        <button onClick={() => changeLanguage('est')}>EST</button>
-                        <button onClick={() => changeLanguage('en')}>EN</button>
                       </Header>
                       <Purple/>
                     </div>
                   )} />
 
           </Switch>
+
           <MyMapComponent
             isMarkerShown
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo1c40gBaxpgM9gGdJv6BHmFl7pPNLZiw"

@@ -1,5 +1,7 @@
 {
   "purpleSquirrelTest": "Test assignment ",
+  "join_team": "Like it? You can join our team!",
+  "about_us" : "We are a Software House developing solutions for banking and credit industry. Our technology enables our customers to serve end-users around the world, from Georgia to Argentina. Our portfolio contains Ruby on Rails based solutions for workflow management, credit scoring, payment gateways and many others.",
   "button": {
     "homeBtn": "Home",
     "purpleBtn": "Test"

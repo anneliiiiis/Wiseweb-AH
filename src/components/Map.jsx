@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {geolocated} from 'react-geolocated';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 export const MyMapComponent = withScriptjs(withGoogleMap((props) =>

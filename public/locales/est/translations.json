@@ -1,5 +1,7 @@
 {
   "purpleSquirrelTest": "Test ülesanne",
+  "join_team": "Meeldib? Tule meie tiimi!",
+  "about_us" : "Oleme Tarkvara Maja, mis arendab lahendusi pangandus- ja krediiditööstusele. Meie tehnoloogia võimaldab meie klientidel teenindada kogu maailma lõppkasutajaid Gruusiasse Argentiinasse. Meie portfell sisaldab Ruby on Railsi töövoo juhtimise, krediidiskoorimise, maksejuhtmete ja paljude teiste jaoks põhinevaid lahendusi.",
   "button": {
     "homeBtn": "Kodu",
     "purpleBtn": "Test ülesanne"
