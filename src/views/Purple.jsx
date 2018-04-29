@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container } from "../components/Wrapper";
 import jss from 'jss';
+import { TestSection } from "../components/Sections";
 import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
 import i18n from'../components/i18n';
@@ -10,7 +11,8 @@ jss.setup(preset());
 const styles = {
   purpleText: {
     fontStyle: 'italic',
-    paddingTop: "100px"
+    paddingTop: "100px",
+    fontSize: "30px"
   }
 }
 
@@ -28,6 +30,8 @@ export default class Purple extends Component {
           <StyledContentText>
             {i18n.t('purpleSquirrelTest')}
           </StyledContentText>
+          <TestSection>
+          </TestSection>
         </Container>
       </div>
     )

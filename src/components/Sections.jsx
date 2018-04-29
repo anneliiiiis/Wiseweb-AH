@@ -22,6 +22,8 @@ const styles = {
     textTransform: props.sectiontextTransform,
     paddingTop: "30px",
     paddingBottom: "30px",
+    paddingLeft: "10px",
+    paddingRight: "10px",
     textAlign: "center",
     width: "100%",
     position: props.sectionPosition
@@ -146,3 +148,14 @@ export class Benefits extends Component {
     )
   }
 }
+
+export class TestSection extends Component {
+    render() {
+    return(
+      <InfoSectionDiv>
+       {i18n.t('test_text')}
+      </InfoSectionDiv>
+    )
+  }
+}
+

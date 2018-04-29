@@ -10,5 +10,6 @@
     "innovative_technologies": "Tööta innovatiivsete tehnoloogiatega",
     "wise_team": "Ole osa väga targast meeskonnast",
     "gain_exp" : "kogu teadmisi parimatelt"
-  }
+  },
+  "test_text": "Loo Ruby on Rails rakendus nullist. Integreerige OpenWeatherMap 5 päeva / 3 tunni prognoos API-meetodit. Kirjutage integratsioon ise. Koguge andmed 3-st linnast: Tallinn, Tartu ja Brno. Andmete säilitamine ja kuvamine. Andmed peaksid olema hõlpsasti arusaadavad."
 }

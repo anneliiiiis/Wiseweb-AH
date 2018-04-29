@@ -10,5 +10,6 @@
     "innovative_technologies": "WORKING WITH INNOVATIVE TECHNOLOGIES",
     "wise_team": "being part of a really wise team",
     "gain_exp" : "gaining experience from the best"
-  }
+  },
+  "test_text" :"Create a Ruby on Rails application from scratch. Integrate the OpenWeatherMap 5 days/3 hour forecast API method. Write the integration yourself. Gather data from 3 cities: Tallinn, Tartu and Brno. Store and display the data. The data should be easy to understand."
 }

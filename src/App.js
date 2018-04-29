@@ -51,7 +51,12 @@ class App extends Component {
             containerElement={<div style={{ height: `400px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
           />
-          <Footer copyright={copyright} email="STAR@WISEMEDIA.EE" phone="+37256707015" address="SOOLA 3, TARTU" addressLink="https://goo.gl/maps/T8qBq2pKq252"/>
+          <Footer
+            copyright={copyright}
+            email="STAR@WISEMEDIA.EE"
+            phone="+37256707015"
+            address="SOOLA 3, TARTU"
+            addressLink="https://goo.gl/maps/T8qBq2pKq252"/>
         </div>
       </Router>
     );
