@@ -20,8 +20,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <div>
-          </div>
           <Switch>
             <Route
               path="/" exact

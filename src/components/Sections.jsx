@@ -102,16 +102,12 @@ export class InfoSection extends Component {
     return(
       <InfoSectionDiv>
         <SectionContainer>
-          <div>
-            <Zoom>
-              <Image alt="table" className="img-fluid" src={TabelImage} />
-            </Zoom>
-          </div>
-          <div>
-            <Zoom>
-              {this.props.info}
-            </Zoom>
-          </div>
+          <Zoom>
+            <Image alt="table" className="img-fluid" src={TabelImage} />
+          </Zoom>
+          <Zoom>
+            {this.props.info}
+          </Zoom>
         </SectionContainer>
       </InfoSectionDiv>
     )
@@ -128,21 +124,15 @@ export class Benefits extends Component {
     return(
       <BenefitsSectionDiv>
         <SectionContainer>
-          <div>
-            <Zoom>
-              <Image alt ="Imagine you are here" src={BannerImage} />
-            </Zoom>
-          </div>
-          <div>
-            <ul>
-              {listItems}
-            </ul>
-          </div>
-          <div>
-            <Zoom>
-              <h3>{this.props.joinUs}</h3>
-            </Zoom>
-          </div>
+          <Zoom>
+            <Image alt ="Imagine you are here" src={BannerImage} />
+          </Zoom>
+          <ul>
+            {listItems}
+          </ul>
+          <Zoom>
+            <h3>{this.props.joinUs}</h3>
+          </Zoom>
         </SectionContainer>
       </BenefitsSectionDiv>
     )
