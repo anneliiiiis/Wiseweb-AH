@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
 import Home from "./views/Home";
 import Purple from "./views/Purple";
-import { Header , StyledHeader} from "./components/Header";
+import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { MyMapComponent } from "./components/Map";
-import { translate, Trans } from 'react-i18next';
+import { translate } from 'react-i18next';
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
-
 
 class App extends Component {
   render() {
     const copyright = `${(new Date().getFullYear())} Wisemedia`
-    const { t, i18n } = this.props;
+    const  i18n = this.props;
     return (
       <Router>
         <div>

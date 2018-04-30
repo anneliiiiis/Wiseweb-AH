@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom';
-import { Button, Nav } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import i18n from'../components/i18n';
 
 const styles = {
@@ -34,15 +34,12 @@ export class Header extends Component {
     }
     return (
       <StyledHeader>
-        <Nav>
-          {this.props.children}
-
-          <Button onClick={() => changeLanguage('est')}>EST</Button>
-          <Button onClick={() => changeLanguage('en')}>EN</Button>
-          <Button>
-            <Link to={this.props.link}>{this.props.linkName}</Link>
-          </Button>
-        </Nav>
+        {this.props.children}
+        <Button onClick={() => changeLanguage('est')}>EST</Button>
+        <Button onClick={() => changeLanguage('en')}>EN</Button>
+        <Button>
+          <Link to={this.props.link}>{this.props.linkName}</Link>
+        </Button>
       </StyledHeader>
     )
   }
