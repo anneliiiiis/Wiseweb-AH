@@ -32,6 +32,6 @@
     "ad_path": "Advanced path",
     "web_ui": "Index and show",
     "api_integration": "Required",
-    "optional": "Optional"
+    "optional_ad": "Optional"
   }
 }
