@@ -30,9 +30,9 @@ export default class Purple extends Component {
           <StyledContentText>
             {i18n.t('purpleSquirrelTest')}
           </StyledContentText>
-          <TestSection>
-          </TestSection>
         </Container>
+        <TestSection text={i18n.t('test_text')}/>
+        <TestSection text={i18n.t('test_text2')}/>
       </div>
     )
   }

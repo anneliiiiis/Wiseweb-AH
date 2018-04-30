@@ -143,7 +143,9 @@ export class TestSection extends Component {
     render() {
     return(
       <InfoSectionDiv>
-       {i18n.t('test_text')}
+        <Container>
+          { this.props.text }
+        </Container>
       </InfoSectionDiv>
     )
   }

@@ -11,5 +11,6 @@
     "wise_team": "being part of a really wise team",
     "gain_exp" : "gaining experience from the best"
   },
-  "test_text" :"Create a Ruby on Rails application from scratch. Integrate the OpenWeatherMap 5 days/3 hour forecast API method. Write the integration yourself. Gather data from 3 cities: Tallinn, Tartu and Brno. Store and display the data. The data should be easy to understand."
+  "test_text" :"Create a Ruby on Rails application from scratch. Integrate the OpenWeatherMap 5 days/3 hour forecast API method. Write the integration yourself. Gather data from 3 cities: Tallinn, Tartu and Brno. Store and display the data. The data should be easy to understand.",
+  "test_text2": "These are the minimum requirements. Focus on fleshing out the required features rather than adding several optional ones. The project should be complete enough to deliver to the customer. However, if you feel like you wish to show us more of your skills, then feel free to add some extra features. Git bundle the finished project and email it. Do not publish it in a public repository."
 }
