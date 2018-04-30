@@ -3,7 +3,7 @@ import { Container } from "./Wrapper";
 import Zoom from 'react-reveal/Zoom';
 import TabelImage from  "../images/table.png";
 import BannerImage from  "../images/banner_text_image.png";
-import { Image } from 'react-bootstrap';
+import { Image, Col } from 'react-bootstrap';
 import jss from 'jss';
 import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
@@ -43,6 +43,20 @@ const styles = {
       listStyleType: "none",
       paddingLeft: "0"
     }
+  },
+  testContainer: {
+    display: "flex",
+    '& li': {
+      paddingTop: "15px",
+      fontSize: "13px"
+    },
+    '& ul':{
+      listStyleType: "none",
+      paddingLeft: "0"
+    }
+  },
+  mainPath: {
+
   }
 }
 
@@ -59,7 +73,7 @@ FrontSectionDiv.defaultProps = {
 }
 
 const InfoSectionDiv = injectSheet(styles)(({classes, children}) => (
-  <section className={classes.Sections}>{ children }</section>
+  <section className={ classes.Sections }>{ children }</section>
 ))
 
 InfoSectionDiv.defaultProps = {
@@ -86,6 +100,11 @@ const SectionContainer = injectSheet(styles)(({classes, children}) => (
     <div className={classes.sectionContainer}>{ children }</div>
   </Container>
 ));
+const TestContainer = injectSheet(styles)(({classes, children}) => (
+  <Container>
+    <div className={classes.testContainer}>{ children }</div>
+  </Container>
+));
 
 export class MainSection extends Component {
   render() {
@@ -93,7 +112,7 @@ export class MainSection extends Component {
       <FrontSectionDiv>
         { this.props.children }
       </FrontSectionDiv>
-    )
+    );
   }
 }
 export class InfoSection extends Component {
@@ -109,7 +128,7 @@ export class InfoSection extends Component {
           </Zoom>
         </SectionContainer>
       </InfoSectionDiv>
-    )
+    );
   }
 }
 
@@ -134,19 +153,48 @@ export class Benefits extends Component {
           </Zoom>
         </SectionContainer>
       </BenefitsSectionDiv>
-    )
+    );
   }
 }
 
 export class TestSection extends Component {
-    render() {
+  render() {
     return(
       <InfoSectionDiv>
         <Container>
           { this.props.text }
         </Container>
       </InfoSectionDiv>
-    )
+    );
+  }
+}
+
+export class TestPath extends Component {
+  render() {
+    const listItems = this.props.paths.map((path) =>
+      <li key={path}>{path}</li>
+    );
+    return(
+      <Col md={this.props.col}>
+        <ul>
+          {listItems}
+        </ul>
+      </Col>
+    );
+  }
+}
+
+export class TestPaths extends Component {
+  render() {
+    return(
+      <BenefitsSectionDiv>
+        <TestContainer>
+          <TestPath paths={this.props.mainPaths} col="4"/>
+          <TestPath paths={this.props.easyPaths} col="4"/>
+          <TestPath paths={this.props.adPaths} col="4"/>
+        </TestContainer>
+      </BenefitsSectionDiv>
+    );
   }
 }
 

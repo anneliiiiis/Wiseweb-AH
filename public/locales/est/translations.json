@@ -12,5 +12,20 @@
     "gain_exp" : "kogu teadmisi parimatelt"
   },
   "test_text": "Loo Ruby on Rails rakendus nullist. Integreerige OpenWeatherMap 5 päeva / 3 tunni prognoos API-meetodit. Kirjutage integratsioon ise. Koguge andmed 3-st linnast: Tallinn, Tartu ja Brno. Andmete säilitamine ja kuvamine. Andmed peaksid olema hõlpsasti arusaadavad.",
-  "test_text2": "Need on miinimumnõuded. Keskenduge pigem vajalike funktsioonide levitamisele kui mitme lisafunktsiooni lisamisele. Projekt peaks olema täielik, et kliendile kätte toimetada. Kui aga tunnete, et soovite näidata meile rohkem oma oskusi, võite vabalt lisada mõned lisafunktsioonid. Git komplekteerib valmis projekti ja saadab selle e-posti teel. Ärge avaldage seda avalikus hoidlas."
+  "test_text2": "Need on miinimumnõuded. Keskenduge pigem vajalike funktsioonide levitamisele kui mitme lisafunktsiooni lisamisele. Projekt peaks olema täielik, et kliendile kätte toimetada. Kui aga tunnete, et soovite näidata meile rohkem oma oskusi, võite vabalt lisada mõned lisafunktsioonid. Git komplekteerib valmis projekti ja saadab selle e-posti teel. Ärge avaldage seda avalikus hoidlas.",
+  "test_path": {
+    "web_ui": "Web UI",
+    "apoi_integration": "API integratsioon",
+    "inserting_data": "Andmete sisestamine",
+    "querying_API" :"API pärginud",
+    "test_coverage": "Test coverage",
+    "user_authentication": "Kasutaja autentimine",
+    "verify_permissions": "Verifitseeri õiguseid"
+  },
+  "easy_path": {
+    "easy_path": "Kergem",
+    "web_ui": "Index, show and modify",
+    "Na": "N/A",
+    "optional": "Optional"
+  }
 }
