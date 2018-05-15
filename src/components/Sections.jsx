@@ -124,7 +124,7 @@ export class InfoSection extends Component {
             <Image alt="table" className="img-fluid" src={TabelImage} />
           </Zoom>
           <Zoom>
-            {this.props.info}
+            { this.props.children }
           </Zoom>
         </SectionContainer>
       </InfoSectionDiv>
