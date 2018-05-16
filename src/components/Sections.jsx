@@ -83,7 +83,7 @@ InfoSectionDiv.defaultProps = {
 }
 
 
-const BenefitsSectionDiv = injectSheet(styles)(({classes, children}) => (
+export const BenefitsSectionDiv = injectSheet(styles)(({classes, children}) => (
   <section className={classes.Sections}>{ children }</section>
 ))
 
@@ -132,13 +132,9 @@ export class InfoSection extends Component {
   }
 }
 
-export class Benefits extends Component {
+
+export class BenefitsSection extends Component {
   render() {
-    const listItems = this.props.benefits.map((benefit) =>
-      <Zoom key={benefit}>
-        <li key={benefit}><b>{benefit}</b></li>
-      </Zoom>
-    );
     return(
       <BenefitsSectionDiv>
         <SectionContainer>
@@ -146,7 +142,6 @@ export class Benefits extends Component {
             <Image alt ="Imagine you are here" src={BannerImage} />
           </Zoom>
           <ul>
-            {listItems}
           </ul>
           <Zoom>
             <h3>{this.props.joinUs}</h3>
@@ -162,7 +157,7 @@ export class TestSection extends Component {
     return(
       <InfoSectionDiv>
         <Container>
-          { this.props.text }
+          { this.props.children }
         </Container>
       </InfoSectionDiv>
     );

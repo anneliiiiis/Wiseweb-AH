@@ -25,7 +25,7 @@ class App extends Component {
                     <div>
                       <Header link="/purple" linkName={i18n.t('button.purpleBtn')}>
                       </Header>
-                      <Home client={this.props.client}/>
+                      <Home/>
                     </div>
                   )} />
             <Route
