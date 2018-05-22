@@ -10,7 +10,7 @@ class Benefits extends Component {
     return this.props.benefits.map((benefit, index) => {
       return (
         <li key={benefit.sys.id}>
-          {benefit.fields.title}
+          {benefit.fields.name}
         </li>
       );
     });

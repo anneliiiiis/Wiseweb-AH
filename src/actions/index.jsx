@@ -16,7 +16,7 @@ export function fetchPosts() {
 }
 
 export function fetchBenefits() {
-  const request = axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=Benefit`);
+  const request = axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=benefit`);
   return {
     type: FETCH_BENEFITS,
     payload: request

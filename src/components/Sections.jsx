@@ -7,7 +7,8 @@ import { Image, Col } from 'react-bootstrap';
 import jss from 'jss';
 import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
-import BackImage from  "../images/lights.jpg";
+import BackImage from  '../images/lights.jpg';
+import Benefits from './Benefits'
 
 jss.setup(preset());
 
@@ -142,6 +143,7 @@ export class BenefitsSection extends Component {
             <Image alt ="Imagine you are here" src={BannerImage} />
           </Zoom>
           <ul>
+            <Benefits/>
           </ul>
           <Zoom>
             <h3>{this.props.joinUs}</h3>
