@@ -9,8 +9,7 @@ class Posts extends Component {
     return this.props.posts.map((post, index) => {
       return (
         <article key={post.sys.id}>
-          <h3>{post.fields.title}</h3>
-          <p>{post.fields.description}</p>
+          <p>{post.fields.text}</p>
         </article>
       );
     });
@@ -18,7 +17,6 @@ class Posts extends Component {
   render() {
     return (
       <div>
-        <h2>Postid</h2>
         {this.renderPosts()}
       </div>
     );

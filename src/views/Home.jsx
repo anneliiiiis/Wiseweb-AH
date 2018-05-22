@@ -3,7 +3,7 @@ import Content from "../components/Content";
 import { Logo } from "../components/Logo";
 import { MainSection, InfoSection, BenefitsSection } from "../components/Sections";
 import i18n from'../components/i18n';
-import Post from './Post';
+import About from './About';
 
 export default class Home extends Component {
 
@@ -20,7 +20,7 @@ export default class Home extends Component {
         <Content>
           <BenefitsSection  joinUs={joinUsText}/>
           <InfoSection>
-            <Post/>
+            <About/>
           </InfoSection>
         </Content>
       </div>
