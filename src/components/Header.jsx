@@ -28,6 +28,7 @@ const StyledHeader = injectSheet(styles)(({ classes, children }) => (
 ))
 
 export class Header extends Component {
+
   render() {
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
@@ -35,8 +36,8 @@ export class Header extends Component {
     return (
       <StyledHeader>
         {this.props.children}
-        <Button onClick={() => changeLanguage('est')}>EST</Button>
-        <Button onClick={() => changeLanguage('en')}>EN</Button>
+        <Button onClick={() => changeLanguage('est')}>EST vana</Button>
+        <Button onClick={() => changeLanguage('en')}>EN vana</Button>
         <Button>
           <Link to={this.props.link}>{this.props.linkName}</Link>
         </Button>

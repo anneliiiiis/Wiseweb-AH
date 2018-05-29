@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { MyMapComponent } from "./components/Map";
 import { translate } from 'react-i18next';
+import { Button } from 'react-bootstrap';
 import {
   BrowserRouter as Router,
   Route,
@@ -12,6 +13,12 @@ import {
 } from 'react-router-dom';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      locale: 'en-US',
+    };
+  }
   render() {
     const copyright = `${(new Date().getFullYear())} Wisemedia`
     const  i18n = this.props;
@@ -24,8 +31,10 @@ class App extends Component {
                   render={() => (
                     <div>
                       <Header link="/purple" linkName={i18n.t('button.purpleBtn')}>
+                        <Button onClick={() => this.setState({locale: 'en-US'})}> en </Button>
+                        <Button onClick={() => this.setState({locale: 'et-EE'})}> ee </Button>
                       </Header>
-                      <Home/>
+                      <Home locale={this.state.locale}/>
                     </div>
                   )} />
             <Route

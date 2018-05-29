@@ -6,11 +6,12 @@ import i18n from'../components/i18n';
 import About from './About';
 
 export default class Home extends Component {
-
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     const benefits = [i18n.t('benefit.innovative_technologies'),  i18n.t('benefit.wise_team'), i18n.t('benefit.gain_exp')];
-    const infoText = i18n.t('about_us');
     const joinUsText = i18n.t('join_team');
     return (
       <div>
@@ -18,7 +19,7 @@ export default class Home extends Component {
             <Logo/>
         </MainSection>
         <Content>
-          <BenefitsSection  joinUs={joinUsText}/>
+          <BenefitsSection locale={this.props.locale} joinUs={joinUsText}/>
           <InfoSection>
             <About/>
           </InfoSection>

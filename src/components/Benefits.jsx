@@ -3,8 +3,14 @@ import { connect } from 'react-redux';
 import { fetchBenefits } from '../actions/index';
 
 class Benefits extends Component {
-  componentWillMount() {
-    this.props.fetchBenefits();
+  constructor(props) {
+    super(props);
+  }
+  componentDidMount() {
+    this.props.fetchBenefits(this.props.locale);
+  }
+  componentWillUpdate() {
+    this.props.fetchBenefits(this.props.locale);
   }
   renderBenefits() {
     return this.props.benefits.map((benefit, index) => {

@@ -135,6 +135,9 @@ export class InfoSection extends Component {
 
 
 export class BenefitsSection extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return(
       <BenefitsSectionDiv>
@@ -143,7 +146,7 @@ export class BenefitsSection extends Component {
             <Image alt ="Imagine you are here" src={BannerImage} />
           </Zoom>
           <ul>
-            <Benefits/>
+            <Benefits locale={this.props.locale}/>
           </ul>
           <Zoom>
             <h3>{this.props.joinUs}</h3>

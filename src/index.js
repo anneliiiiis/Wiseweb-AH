@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import './stylesheets/application.scss';
+//import './stylesheets/application.scss';
 import * as contentful from 'contentful'
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
