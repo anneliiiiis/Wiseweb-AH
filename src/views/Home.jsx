@@ -3,7 +3,7 @@ import Content from "../components/Content";
 import { Logo } from "../components/Logo";
 import { MainSection, InfoSection, BenefitsSection } from "../components/Sections";
 import i18n from'../components/i18n';
-import About from './About';
+import Abouts from './About';
 
 export default class Home extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ export default class Home extends Component {
         <Content>
           <BenefitsSection locale={this.props.locale} joinUs={joinUsText}/>
           <InfoSection>
-            <About/>
+            <Abouts locale={this.props.locale}/>
           </InfoSection>
         </Content>
       </div>

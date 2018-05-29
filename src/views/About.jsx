@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../actions/index';
-class Posts extends Component {
+import { fetchAbouts } from '../actions/index';
+class Abouts extends Component {
   componentWillMount() {
-    this.props.fetchPosts();
+    this.props.fetchAbouts(this.props.locale);
   }
-  renderPosts() {
-    return this.props.posts.map((post, index) => {
+  componentWillUpdate() {
+    this.props.fetchAbouts(this.props.locale);
+  }
+  renderAbouts() {
+    return this.props.abouts.map((about, index) => {
       return (
-        <article key={post.sys.id}>
-          <p>{post.fields.text}</p>
+        <article key={about.sys.id}>
+          <p>{about.fields.text}</p>
         </article>
       );
     });
@@ -17,12 +20,12 @@ class Posts extends Component {
   render() {
     return (
       <div>
-        {this.renderPosts()}
+        {this.renderAbouts()}
       </div>
     );
   }
 }
 function mapStateToProps(state) {
-  return { posts: state.posts.all };
+  return { abouts: state.abouts.all };
 }
-export default connect(mapStateToProps, { fetchPosts })(Posts);
+export default connect(mapStateToProps, { fetchAbouts })(Abouts);
