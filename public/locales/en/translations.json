@@ -1,0 +1,37 @@
+{
+  "purpleSquirrelTest": "Test assignment ",
+  "join_team": "Like it? You can join our team!",
+  "about_us" : "We are a Software House developing solutions for banking and credit industry. Our technology enables our customers to serve end-users around the world, from Georgia to Argentina. Our portfolio contains Ruby on Rails based solutions for workflow management, credit scoring, payment gateways and many others.",
+  "button": {
+    "homeBtn": "Home",
+    "purpleBtn": "Test"
+  },
+  "benefit": {
+    "innovative_technologies": "WORKING WITH INNOVATIVE TECHNOLOGIES",
+    "wise_team": "being part of a really wise team",
+    "gain_exp" : "gaining experience from the best"
+  },
+  "test_text" :"Create a Ruby on Rails application from scratch. Integrate the OpenWeatherMap 5 days/3 hour forecast API method. Write the integration yourself. Gather data from 3 cities: Tallinn, Tartu and Brno. Store and display the data. The data should be easy to understand.",
+  "test_text2": "These are the minimum requirements. Focus on fleshing out the required features rather than adding several optional ones. The project should be complete enough to deliver to the customer. However, if you feel like you wish to show us more of your skills, then feel free to add some extra features. Git bundle the finished project and email it. Do not publish it in a public repository.",
+  "test_path": {
+    "web_ui": "Web UI",
+    "api_integration": "API integration",
+    "inserting_data": "Inserting data",
+    "querying_API" :"Querying the API",
+    "test_coverage": "Test coverage",
+    "user_authentication": "User authentication",
+    "verify_permissions": "Verify permissions"
+  },
+  "easy_path": {
+    "easy_path": "Easy path",
+    "web_ui": "Index, show and modify",
+    "na": "N/A",
+    "optional": "Optional"
+  },
+  "ad_path": {
+    "ad_path": "Advanced path",
+    "web_ui": "Index and show",
+    "api_integration": "Required",
+    "optional_ad": "Optional"
+  }
+}
