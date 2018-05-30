@@ -9,14 +9,9 @@ const styles = {
     position: "fixed",
     zIndex: "1",
     width: "100%",
-    backgroundColor: '#1c1b50',
     height: "40px",
-    '& .btn': {
-      backgroundColor: '#1c1b50',
+    '& a':{
       color: '#fff',
-      '& a':{
-        color: '#fff',
-      }
     }
   }
 }
@@ -25,6 +20,12 @@ const StyledHeader = injectSheet(styles)(({ classes, children }) => (
   <header className={classes.header}>
     { children }
   </header>
+))
+
+const StyledLink = injectSheet(styles)(({ classes, children }) => (
+  <div className={classes.link}>
+    { children }
+  </div>
 ))
 
 export class Header extends Component {
@@ -36,11 +37,7 @@ export class Header extends Component {
     return (
       <StyledHeader>
         {this.props.children}
-        <Button onClick={() => changeLanguage('est')}>EST vana</Button>
-        <Button onClick={() => changeLanguage('en')}>EN vana</Button>
-        <Button>
-          <Link to={this.props.link}>{this.props.linkName}</Link>
-        </Button>
+        <Link to={this.props.link}>{this.props.linkName}</Link>
       </StyledHeader>
     )
   }

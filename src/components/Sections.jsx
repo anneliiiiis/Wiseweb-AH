@@ -9,6 +9,7 @@ import preset from 'jss-preset-default';
 import injectSheet from 'react-jss';
 import BackImage from  '../images/lights.jpg';
 import Benefits from './Benefits'
+import Images from './Image'
 
 jss.setup(preset());
 
@@ -143,7 +144,7 @@ export class BenefitsSection extends Component {
       <BenefitsSectionDiv>
         <SectionContainer>
           <Zoom>
-            <Image alt ="Imagine you are here" src={BannerImage} />
+            <Images/>
           </Zoom>
           <ul>
             <Benefits locale={this.props.locale}/>
